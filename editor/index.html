@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+      <title>Story Slicer</title>
+      <link rel="stylesheet" href="css/main.css">
+	
+  </head>
+  <body>
+    <div class="overlay hidden">
+      <div class="dialog-pos">
+	<div class="dialog">
+	  <h2>Sample Dialog</h2>
+	  <label for="lala">Panel Template</label>
+	  <textarea name="lala"></textarea>
+	  <div class="button cancel">Cancel</div>
+	  <div class="button submit">Submit</div>
+	</div>
+      </div>
+    </div>
+    <div id="frame">
+      <div id="topbar">
+	<div class="left">
+	  <h2>Story Slicer Editor</h2>
+	</div>
+	<div class="right">
+	  <a href="#">Home</a>
+	</div>
+      </div>
+      <div id="main">
+	<div class="sidebar">
+	  <h2>Controls</h2>
+	  <div class="button" action="add-panel">Add</div>
+	  
+	  <div id="node-details"></div>
+	</div>
+	<div class="workarea">
+	  <div id="nodes">
+	    <div id="render"></div>		
+	  </div>	
+	</div>
+	<div class="sidebar">  
+	  <h2>Game State</h2>
+	  <label for="state">States:</label>
+	  <div class="state-variables">
+
+	  </div>
+	  <h2>Resources</h2>
+	  <h3>Audio</h3>
+	  <label for="audio">Tracks</label>
+	  <select name="audio">
+	    <option value="1">Track1.mp3</option>
+	    <option value="2">Track2.mp3</option>
+	  </select>
+	  <h3>Animations</h3>
+	  	<label for="animations">Choice</label>
+	   	<select name="animations">
+			<option value="1">Animation</option>
+			<option value="2">Other Animation</option>
+		</select>
+	</div>
+      </div>
+    </div>
+    <script type="text/javascript" data-main="js/config.js" src="lib/require.js"></script>
+  </body>
+</html>

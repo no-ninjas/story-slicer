@@ -1,0 +1,42 @@
+# Story Slicer Data Format
+
+// pseudo-js notes from our first brainstorm at Codebits 2012
+
+var Game = {
+	animations: {},
+	audio: {},
+	panels: [],
+	state: {},
+	start: ,
+	current: ,
+	end
+};
+
+var Animation = {
+	id: ,
+	ctx: ,
+	width: ,
+	height: ,
+	update: function (state, t) {}
+}
+
+var Audio = {
+    id: ,
+    src: ,
+	play: function(),
+	stop: function()
+}
+
+var Panel = {
+	id: 'chap-1-start',
+	animation: 
+	text: , // moustache template
+	choices: []
+}
+
+var Choice = {
+	text: , // label?
+	submit: function(state) {
+		return 'chap-1-end';
+	}
+}
